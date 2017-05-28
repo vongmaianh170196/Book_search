@@ -1,0 +1,52 @@
+h1, form{
+  text-align: center;
+}
+.keysearch{
+  width: 60%;
+  box-shadow: 5px 2px 5px #888888;
+ font-size: 1.5rem;
+  margin: 1.5%;
+}
+.search{
+  background-color: rgb(216, 243, 216);
+  font-size: 1.5rem;
+  color: rgb(0, 26, 0);
+  font-weight: bold;
+  height: 10%;
+  border-radius: 5%;
+}
+.result{
+  margin: 0 0;
+}
+.result ul{
+  list-style-type: none;
+  
+}
+.result li{
+  text-align: center;
+  font-size: 1.5rem;
+}
+.result li div{
+  margin: 2%;
+  
+  text-align: center;
+}
+.result li div span{
+  margin: 2%;
+  width: 25%;
+ height: 50%;
+  text-align: center;
+}
+.result li a{
+  text-decoration: none;
+  color: black;
+}
+.result li img{
+  margin: 2%;
+  border:  solid black;
+}
+.search-opt {
+  display: inline;
+  margin: 2% 3% 2.5% ;
+  font-size: 1.5rem;
+ }
