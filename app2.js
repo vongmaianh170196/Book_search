@@ -5,7 +5,7 @@ $(document).ready(function(){
     var $keysearch = $('.keysearch');
     var searchresult;
     
-          var googleAPI="https://www.googleapis.com/books/v1/volumes?q=" + $keysearch.val(); //url to send data to
+          var googleAPI="https://www.googleapis.com/books/v1/volumes?q=" + $keysearch.val() +"&maxResults=40" //url to send data to
             var googleData = {
               tags: $keysearch.val(),
               format: 'json'
@@ -15,7 +15,8 @@ $(document).ready(function(){
               $.each(data.items, function(i, volumeInfo){
                 
                   searchresult += '<li><div>' + data.items[i].volumeInfo.title;
-                  searchresult += '<br> <a href ="' + data.items[i].volumeInfo.infoLink + '"> <img src ="' + data.items[i].volumeInfo.imageLinks.thumbnail + '">';
+                  searchresult += '<br> <a href ="' + data.items[i].volumeInfo.infoLink + '">'
+                  searchresult +=' <img src ="' + data.items[i].volumeInfo.imageLinks.thumbnail + '">';
                   searchresult +='</div></li>';
               
                 
